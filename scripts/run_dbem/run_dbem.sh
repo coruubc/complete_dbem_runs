@@ -18,5 +18,5 @@ echo “Starting task: $SLURM_ARRAY_TASK_ID”
 sleep ${SLURM_ARRAY_TASK_ID}5s
 
 export OMP_NUM_THREADS=1
-../../dbem_scripts/DBEM_v2_y
+../../../dbem/dbem_scripts/DBEM_v2_y
 echo "Program $SLURM_JOB_NAME finished with exit code $? at: $(date)"
