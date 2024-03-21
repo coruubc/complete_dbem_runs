@@ -25,10 +25,6 @@ distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Di
 
 distributions <- str_sub(distributions,2,7)
 
-
-656
-13
-
 ```
 
 # Prepare data for runs
