@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+author: "Annon. Reviewer"
+date: "2024-03-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+```
+
+
+# Load data
+
+```{r}
+
+missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_runs_yulia/missing_sp.csv") %>% 
+  group_by(taxonkey,model) %>% 
+  tally()
+
+
+```
+
+# Prepare data for runs
+
+## Create species files
+
+```{r}
+
+
+# GFDL file (manually add 600004 at the end)
+gfdl_spp_list <- missing_sp %>% 
+  filter(model == "GFDL") %>% 
+  select(taxonkey)
+    
+    name <- paste0(here(),"/data/species/MisGSppList.txt")
+    write.table(gfdl_spp_list, file=name, sep="\t", col.names = F, row.names = F)
+  
+# IPSL file (manually add 600004 at the end)
+ipsl_spp_list <- missing_sp %>% 
+  filter(model == "IPSL") %>% 
+  select(taxonkey)
+    
+    name <- paste0(here(),"/data/species/MisISppList10",".txt")
+    write.table(ipsl_spp_list, file=name, sep="\t", col.names = F, row.names = F)
+
+```
+

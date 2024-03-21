@@ -1,0 +1,4 @@
+
+#!/bin/bash
+
+module spider r; module load gcc/9.3.0 r/4.0.2;R
