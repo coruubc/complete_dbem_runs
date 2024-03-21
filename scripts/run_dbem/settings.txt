@@ -1,10 +1,10 @@
- SppNo           4
- CCSc C6IPSL26                                 
+ SppNo            4
+ CCSc C6IPSL26                                
  SSP SSP126                                  
- rsfile MisISppList          
- rpath C6IPSL26F1MISS
+ rsfile MisISppList         
+ rpath C6IPSL26F1MISS                
  tpath TaxonDataC0                   
- ifile 10                  
+ ifile 11                  
  FHS    1.00
  FEEZ    1.00
  MPApath mpa_no                                  
