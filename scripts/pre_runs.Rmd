@@ -20,6 +20,15 @@ missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_ru
   tally()
 
 
+# Get lisf of available distributions
+distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/")
+
+distributions <- str_sub(distributions,2,7)
+
+
+656
+13
+
 ```
 
 # Prepare data for runs
@@ -29,16 +38,23 @@ missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_ru
 ```{r}
 
 
-# GFDL file (manually add 600004 at the end)
+missing_distributions <- missing_sp %>% 
+  filter(!taxonkey %in% distributions)
+
+write_csv(missing_distributions, "../data/missing_distributions.csv")
+
+# GFDL file (manually add 600004 at the end x 2)
 gfdl_spp_list <- missing_sp %>% 
+  filter(taxonkey %in% distributions) %>% 
   filter(model == "GFDL") %>% 
   select(taxonkey)
     
-    name <- paste0(here(),"/data/species/MisGSppList.txt")
+    name <- paste0(here(),"/data/species/MisGSppList10.txt")
     write.table(gfdl_spp_list, file=name, sep="\t", col.names = F, row.names = F)
   
-# IPSL file (manually add 600004 at the end)
+# IPSL file 
 ipsl_spp_list <- missing_sp %>% 
+  filter(taxonkey %in% distributions) %>% 
   filter(model == "IPSL") %>% 
   select(taxonkey)
     
