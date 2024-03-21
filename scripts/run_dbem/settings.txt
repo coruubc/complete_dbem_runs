@@ -1,4 +1,4 @@
- SppNo           40
+ SppNo           35
  CCSc C6IPSL26                                 
  SSP SSP126                                  
  rsfile MisISppList         
