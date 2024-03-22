@@ -6,8 +6,10 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+library(MyFunctions)
 library(tidyverse)
 library(here)
+library(sf)
 ```
 
 
@@ -15,17 +17,114 @@ library(here)
 
 ```{r}
 
+# Get taxon list
+taxon_list <- my_data("sau_species")
+
+# Missing Species by Yulia
 missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_runs_yulia/missing_sp.csv") %>% 
-  group_by(taxonkey,model) %>% 
-  tally()
+  group_by(taxon_key = taxonkey,model) %>% 
+  tally() %>% 
+  select(-n) %>% 
+  left_join(taxon_list)
 
 
-# Get lisf of available distributions
+# Get list of available distributions
+complete_distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/",full.names = T)
 distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/")
-
 distributions <- str_sub(distributions,2,7)
 
+# Available distributions 
+distributions_df <- as.data.frame(distributions) %>% 
+  slice(-1:-2) %>% 
+  rename(taxon_key = distributions) %>% 
+  mutate(distributions = 1)
+
+
+# Get EEZ shapefile
+sau_eez <- my_sf("SAU")
+
+
+
+
 ```
+
+## Test distributions
+
+```{r}
+
+missing_sp_path <- missing_sp %>% 
+  group_by(taxon_key) %>% 
+  tally() %>% 
+  mutate(read_missing = paste0("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/S",taxon_key,".csv"))
+
+for(i in 1:nrow(missing_sp_path)){
+  
+  read_path <- missing_sp_path$read_missing[i]
+  print(str_sub(read_path,65,70))
+  
+  
+  if(file.exists(read_path)){
+    
+    glob_map <- read.csv(read_path,header = F) %>%
+      bind_cols(MyFunctions::my_data("dbem_coords")) %>%
+      filter(V1 > 0) %>%
+      ggplot() +
+      geom_tile(
+        aes(
+          x = lon,
+          y = lat,
+          fill = V1,
+          color = V1
+        )
+      ) +
+      MyFunctions::my_land_map() +
+      scale_fill_viridis_b() +
+      scale_color_viridis_b() +
+      ggtitle(paste0("Distribution of ",str_sub(read_path,65,70)," ",taxon_list %>% filter(taxon_key %in% str_sub(read_path,65,70)) %>% pull(common_name)))
+    
+    zoom_map <- read.csv(read_path,header = F) %>% 
+      bind_cols(MyFunctions::my_data("dbem_coords")) %>% 
+      filter(V1 > 0) %>% 
+      ggplot() +
+      geom_tile(
+        aes(
+          x = lon,
+          y = lat,
+          fill = V1,
+          color = V1
+        )
+      ) +
+      MyFunctions::my_land_map() +
+      scale_fill_viridis_b() +
+      scale_color_viridis_b() +
+      ggtitle(paste0("Distribution of ",str_sub(read_path,65,70)," ",taxon_list %>% filter(taxon_key %in% str_sub(read_path,65,70)) %>% pull(common_name))) +
+      coord_sf(
+        x = c(63,83),
+        y = c(-10,10)
+      )
+    
+    
+    ggsave(
+      filename = paste0("../data/distribution_maps/dist_",str_sub(read_path,65,70),"_glob.png"),
+      plot = glob_map
+    )
+    
+    ggsave(
+      filename = paste0("../data/distribution_maps/dist_",str_sub(read_path,65,70),"_zoom.png"),
+      plot = zoom_map
+    )
+    
+    
+  }else{
+    
+    print(paste("no distribution of ",str_sub(read_path,65,70)))
+  }
+  
+}
+
+```
+
+
 
 # Prepare data for runs
 
@@ -35,7 +134,9 @@ distributions <- str_sub(distributions,2,7)
 
 
 missing_distributions <- missing_sp %>% 
-  filter(!taxonkey %in% distributions)
+  filter(!taxon_key %in% distributions) %>% 
+  # group_by(taxon_key,taxon_name,common_name) %>% 
+  tally()
 
 write_csv(missing_distributions, "../data/missing_distributions.csv")
 
