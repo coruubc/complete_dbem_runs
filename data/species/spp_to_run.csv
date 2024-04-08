@@ -1,0 +1,100 @@
+taxon_key,taxon_name,common_name,genus,species,will_run
+600006,Coryphaena hippurus,Common dolphinfish,Coryphaena,hippurus,Yes
+600080,Chanos chanos,Milkfish,Chanos,chanos,Yes
+600081,Aphareus furca,Small toothed jobfish,Aphareus,furca,No
+600084,Aprion virescens,Green jobfish,Aprion,virescens,No
+600088,Lamna nasus,Porbeagle,Lamna,nasus,Yes
+600089,Acanthocybium solandri,Wahoo,Acanthocybium,solandri,Yes
+600107,Katsuwonus pelamis,Skipjack tuna,Katsuwonus,pelamis,Yes
+600111,Rastrelliger kanagurta,Indian mackerel,Rastrelliger,kanagurta,Yes
+600114,Sarda orientalis,Striped bonito,Sarda,orientalis,Yes
+600145,Thunnus maccoyii,Southern bluefin tuna,Thunnus,maccoyii,Yes
+600148,Thunnus tonggol,Longtail tuna,Thunnus,tonggol,Yes
+600186,Macolor macularis,Midnight snapper,Macolor,macularis,No
+600187,Macolor niger,Black and white snapper,Macolor,niger,No
+600201,Pristipomoides filamentosus,Crimson jobfish,Pristipomoides,filamentosus,Yes
+600217,Istiompax indica,Black marlin,Istiompax,indica,Yes
+600363,Lactarius lactarius,False trevally,Lactarius,lactarius,Yes
+600364,Pomatomus saltatrix,Bluefish,Pomatomus,saltatrix,Yes
+600399,Pomadasys argenteus,Silver grunt,Pomadasys,argenteus,Yes
+600412,Elagatis bipinnulata,Rainbow runner,Elagatis,bipinnulata,Yes
+600419,Argyrosomus hololepidotus,Southern meagre,Argyrosomus,hololepidotus,Yes
+600556,Encrasicholina heteroloba,Shorthead anchovy,Encrasicholina,heteroloba,No
+600637,Hexanchus griseus,Bluntnose sixgill shark,Hexanchus,griseus,Yes
+600752,Isurus oxyrinchus,Shortfin mako,Isurus,oxyrinchus,Yes
+600753,Isurus paucus,Longfin mako,Isurus,paucus,Yes
+600858,Carcharhinus albimarginatus,Silvertip shark,Carcharhinus,albimarginatus,No
+600861,Carcharhinus amblyrhynchos,Blacktail reef shark,Carcharhinus,amblyrhynchos,No
+600868,Carcharhinus falciformis,Silky shark,Carcharhinus,falciformis,Yes
+600875,Carcharhinus longimanus,Oceanic whitetip shark,Carcharhinus,longimanus,Yes
+600877,Carcharhinus melanopterus,Blacktip reef shark,Carcharhinus,melanopterus,No
+600880,Carcharhinus plumbeus,Sandbar shark,Carcharhinus,plumbeus,Yes
+600886,Galeocerdo cuvier,Tiger shark,Galeocerdo,cuvier,Yes
+600898,Prionace glauca,Blue shark,Prionace,glauca,Yes
+600912,Sphyrna lewini,Scalloped hammerhead,Sphyrna,lewini,Yes
+600914,Sphyrna mokarran,Great hammerhead,Sphyrna,mokarran,No
+600917,Sphyrna zygaena,Smooth hammerhead,Sphyrna,zygaena,Yes
+600918,Caesio caerulaurea,Blue and gold fusilier,Caesio,caerulaurea,No
+600920,Caesio lunaris,Lunar fusilier,Caesio,lunaris,No
+600950,Platycephalus indicus,Bartail flathead,Platycephalus,indicus,Yes
+600988,Alectis ciliaris,African pompano,Alectis,ciliaris,No
+600993,Decapterus macarellus,Mackerel scad,Decapterus,macarellus,No
+601007,Seriola rivoliana,Longfin yellowtail,Seriola,rivoliana,No
+601072,Lampris guttatus,Opah,Lampris,guttatus,Yes
+601235,Sphyraena barracuda,Great barracuda,Sphyraena,barracuda,Yes
+601265,Naso unicornis,Bluespine unicornfish,Naso,unicornis,Yes
+601288,Trichiurus lepturus,Largehead hairtail,Trichiurus,lepturus,Yes
+601370,Zeus faber,John dory,Zeus,faber,Yes
+601385,Etelis coruscans,Deepwater longtail red snapper,Etelis,coruscans,No
+601407,Lutjanus argentimaculatus,Mangrove red snapper,Lutjanus,argentimaculatus,Yes
+601457,Spratelloides delicatulus,Delicate round herring,Spratelloides,delicatulus,No
+601501,Amblygaster sirm,Spotted sardinella,Amblygaster,sirm,No
+601832,Gnathodentex aureolineatus,Striped large-eye bream,Gnathodentex,aureolineatus,No
+601843,Lethrinus mahsena,Sky emperor,Lethrinus,mahsena,Yes
+601845,Lethrinus microdon,Smalltooth emperor,Lethrinus,microdon,Yes
+601846,Lethrinus nebulosus,Spangled emperor,Lethrinus,nebulosus,Yes
+601848,Lethrinus rubrioperculatus,Spotcheek emperor,Lethrinus,rubrioperculatus,No
+601850,Lethrinus variegatus,Slender emperor,Lethrinus,variegatus,No
+601851,Lethrinus harak,Thumbprint emperor,Lethrinus,harak,Yes
+601863,Lethrinus lentjan,Pink ear emperor,Lethrinus,lentjan,Yes
+601864,Lethrinus olivaceus,Longface emperor,Lethrinus,olivaceus,No
+601909,Carangoides orthogrammus,Island trevally,Carangoides,orthogrammus,No
+601912,Carangoides talamparoides,Imposter trevally,Carangoides,talamparoides,No
+601916,Carangoides armatus,Longfin trevally,Carangoides,armatus,No
+601917,Caranx sexfasciatus,Bigeye trevally,Caranx,sexfasciatus,Yes
+601924,Carangoides coeruleopinnatus,Coastal trevally,Carangoides,coeruleopinnatus,No
+601936,Caranx lugubris,Black jack,Caranx,lugubris,No
+602535,Alopias vulpinus,Thresher,Alopias,vulpinus,Yes
+604451,Leiognathus equulus,Common ponyfish,Leiognathus,equulus,No
+604456,Siganus canaliculatus,White-spotted spinefoot,Siganus,canaliculatus,No
+604458,Terapon jarbua,Jarbua terapon,Terapon,jarbua,No
+604465,Diagramma pictum,Painted sweetlips,Diagramma,pictum,Yes
+604611,Siganus corallinus,Bluespotted spinefoot,Siganus,corallinus,No
+604614,Siganus argenteus,Streamlined spinefoot,Siganus,argenteus,No
+604615,Siganus sutor,Shoemaker spinefoot,Siganus,sutor,No
+604821,Upeneus vittatus,Yellowstriped goatfish,Upeneus,vittatus,No
+604824,Otolithes ruber,Tigertoothed croaker,Otolithes,ruber,Yes
+605348,Epinephelus fasciatus,Blacktip grouper,Epinephelus,fasciatus,Yes
+605368,Rhabdosargus sarba,Goldlined seabream,Rhabdosargus,sarba,Yes
+605555,Scarus rubroviolaceus,Ember parrotfish,Scarus,rubroviolaceus,No
+605734,Sphyraena forsteri,Bigeye barracuda,Sphyraena,forsteri,No
+605805,Kyphosus cinerascens,Blue seachub,Kyphosus,cinerascens,Yes
+606358,Chirocentrus dorab,Dorab wolfherring,Chirocentrus,dorab,Yes
+606441,Aethaloperca rogaa,Redmouth grouper,Aethaloperca,rogaa,Yes
+606454,Cephalopholis sonnerati,Tomato hind,Cephalopholis,sonnerati,No
+607354,Epinephelus multinotatus,White-blotched grouper,Epinephelus,multinotatus,Yes
+607372,Plectropomus laevis,Blacksaddled coralgrouper,Plectropomus,laevis,No
+607430,Plectropomus pessuliferus,Roving coralgrouper,Plectropomus,pessuliferus,Yes
+607699,Gerres longirostris,Strongspine silver-biddy,Gerres,longirostris,No
+612288,Plagiogeneion rubiginosum,Rubyfish,Plagiogeneion,rubiginosum,No
+690189,Fenneropenaeus indicus,Indian white prawn,Fenneropenaeus,indicus,Yes
+690228,Panulirus longipes,Longlegged spiny lobster,Panulirus,longipes,Yes
+690341,Panulirus homarus,Scalloped spiny lobster,Panulirus,homarus,Yes
+690383,Metapenaeus monoceros,Speckled shrimp,Metapenaeus,monoceros,Yes
+690790,Holothuria atra,Lollyfish,Holothuria,atra,No
+690791,Holothuria edulis,Pinkfish,Holothuria,edulis,No
+690801,Panulirus penicillatus,Pronghorn spiny lobster,Panulirus,penicillatus,No
+690802,Panulirus versicolor,Painted spiny lobster,Panulirus,versicolor,No
+690819,Bohadschia marmorata,Chalky cucumber,Bohadschia,marmorata,No
+690883,Ranina ranina,Kona crab,Ranina,ranina,No
+690906,Octopus cyanea,Big blue octopus,Octopus,cyanea,No
