@@ -23,7 +23,7 @@ This script is documenting the running 53 species for both `gfdl` and `ipsl` und
  FEEZ    1.00
  MPApath mpa_no
 
-
-
 Issues seem to be running S605098
+
+- First set of runs successfull.
 
