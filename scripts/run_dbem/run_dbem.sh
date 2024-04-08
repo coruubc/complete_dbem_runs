@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ADRDisp
-#SBATCH --account=rrg-wailung
+#SBATCH --account=def-wailung
 #SBATCH -N 1 	#Nodes
 #SBATCH -N 1	#CPU count
 #SBATCH --mem-per-cpu=700M
