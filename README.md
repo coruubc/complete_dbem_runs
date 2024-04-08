@@ -1,6 +1,6 @@
 # Repository to run missing species
 
-This script is documenting the running 53 species for both `gfdl` and `ipsl` under SSPs 126, 445, 885 and for different scenarios of F (`F11,`F2`,`F3`). Note that the original species list (`./data/species/spp_to_run.csv`) has 99 species from which we only have distribution for 53 (see data for more info). 
+This script is documenting the running 53 species for both `gfdl` and `ipsl` under SSPs 126, 445, 885 and for different scenarios of F (`F11,`F2`,`F3`). Note that the original species list (`./data/species/missing_sp.csv`) has 99 species from which we only have distribution for 53 (`./data/species/spp_to_run.csv`). 
 
 # Runs
 
