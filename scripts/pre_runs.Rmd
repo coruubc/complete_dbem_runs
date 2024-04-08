@@ -20,10 +20,11 @@ library(sf)
 ```{r}
 
 # Get taxon list
+# NOTE WILL NOT RUN IN YOUR PERSONAL COMPUTE AS IT NEEDS SPECIFIC LIBRARY
 taxon_list <- my_data("sau_species")
 
 # Missing Species by Yulia
-missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_runs_yulia/missing_sp.csv") %>% 
+missing_sp <- read.csv(here("./data/species/missing_sp.csv")) %>% 
   group_by(taxon_key = taxonkey) %>% 
   tally() %>% 
   select(-n) %>% 
@@ -31,6 +32,7 @@ missing_sp <- read.csv("~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_ru
 
 
 # Get list of available distributions
+# You can get these distributions from DROBO and change the paths
 complete_distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/",full.names = T)
 distributions <- list.files("~/Library/CloudStorage/OneDrive-UBC/Data/Species/Distributions/")
 distributions <- str_sub(distributions,2,7)
@@ -53,7 +55,7 @@ spp_to_run <- missing_sp %>%
     will_run = ifelse(taxon_key %in% distributions,"Yes","No")
   )
 
-write_csv(spp_to_run,"~/Library/CloudStorage/OneDrive-UBC/Data/dbem/missing_runs_yulia/spp_to_run.csv")
+write_csv(spp_to_run,here("/data/species/spp_to_run.csv"))
 
 ```
 
@@ -139,9 +141,7 @@ i = 5
 
 ```
 
-# Prepare data for runs
-
-## Create species files
+## Create species files for DBEM
 
 ```{r}
 
