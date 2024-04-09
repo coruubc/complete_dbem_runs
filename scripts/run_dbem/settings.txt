@@ -2,9 +2,9 @@
  CCSc C6GFDL26                                
  SSP SSP126                                  
  rsfile MisSppList          
- rpath C6GFDL26F15MISS                
+ rpath C6GFDL26F1MISS               
  tpath TaxonDataC0                   
  ifile 10                  
- FHS    1.50
- FEEZ    1.50
+ FHS    1.0
+ FEEZ    1.0
  MPApath mpa_no                                  
