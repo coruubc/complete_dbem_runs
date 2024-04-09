@@ -2,9 +2,9 @@
  CCSc C6GFDL85                                
  SSP SSP585                                  
  rsfile MisSppList          
- rpath C6GFDL85F15MISS                
+ rpath C6GFDL85F05MISS               
  tpath TaxonDataC0                   
  ifile 10                  
- FHS    1.50
- FEEZ    1.50
+ FHS    0.50
+ FEEZ   0.50
  MPApath mpa_no                                  
