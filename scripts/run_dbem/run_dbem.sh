@@ -4,7 +4,7 @@
 #SBATCH -N 1 	#Nodes
 #SBATCH -N 1	#CPU count
 #SBATCH --mem-per-cpu=700M
-#SBATCH -t 00-07:00:00
+#SBATCH -t 00-15:00:00
 #SBATCH --mail-user=j.palacios@oceans.ubc.ca
 #SBATCH --mail-type=ALL
 #SBATCH --array=10-11
