@@ -1,10 +1,10 @@
  SppNo           27
- CCSc C6IPSL85                                
- SSP SSP585                                  
+ CCSc C6GFDL45B                               
+ SSP SSP126                                  
  rsfile MisSppList          
- rpath C6IPSL85F05MISS               
+ rpath C6GFDL45F15MISS               
  tpath TaxonDataC0                   
- ifile 10                  
- FHS    0.50
- FEEZ   0.50
+ ifile 12                  
+ FHS    1.50
+ FEEZ    1.50
  MPApath mpa_no                                  
