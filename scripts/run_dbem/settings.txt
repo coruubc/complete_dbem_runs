@@ -6,5 +6,5 @@
  tpath TaxonDataC0                   
  ifile 10                  
  FHS    0.50
- FEEZ   0.50
+ FEEZ    0.50
  MPApath mpa_no                                  
