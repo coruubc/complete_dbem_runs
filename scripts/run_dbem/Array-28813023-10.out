@@ -1,0 +1,8 @@
+Current working directory is /project/6006523/jepa/complete_dbem_runs/scripts/run_dbem
+Starting run at:Thu 11 Apr 2024 09:56:34 AM PDT
+“Starting task: 10”
+ Species list:    10
+ MisSppList10.txt    
+ Initializing, loading files...
+          27
+Program ADRDisp finished with exit code 29 at: Thu 11 Apr 2024 09:58:23 AM PDT
